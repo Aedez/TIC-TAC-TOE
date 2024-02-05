@@ -52,3 +52,9 @@ jobs:
 
       - name: Run the container
         run: docker run -d --name ticgame -p 3000:3000 aedez1/tic-tac-toe:latest
+
+      - name: Update kubeconfig
+        run: aws eks --region <cluster-region> update-kubeconfig --name <cluster-name>
+
+      - name: Deploy to EKS
+        run: kubectl apply -f deployment-service.yml
