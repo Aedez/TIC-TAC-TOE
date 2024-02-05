@@ -19,7 +19,6 @@ jobs:
       - name: Deploy to container
         run: | 
           docker stop ticgame
-          docker rm ticgame
         
       - name: Update kubeconfig
         run: aws eks --region us-east-1 update-kubeconfig --name EKS_CLOUD
