@@ -6,7 +6,7 @@
 
 body {
     background: #222;
-    font-family: consolas;
+    font-family: consolas; /*ignore the error*/
 }
 
 .tic-tac-toe {
