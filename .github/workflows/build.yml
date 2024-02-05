@@ -58,3 +58,13 @@ jobs:
 
       - name: Deploy to EKS
         run: kubectl apply -f deployment-service.yml
+
+      - name: Send a Slack Notification
+        if: always()
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#git'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
