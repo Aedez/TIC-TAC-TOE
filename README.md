@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Summary
-
+This project is inspired by the work of [Aj7Ay](https://github.com/Aj7Ay) and his insightful blog post on [GitHub Actions + Amazon EKS: CI/CD Pipeline](https://mrcloudbook.hashnode.dev/github-actions-amazon-eks-cicd-pipeline#heading-step1a-launch-an-ec2-instance). The original work provided valuable guidance and served as a foundation for the development of this CI/CD pipeline.
 This project sets up a Continuous Integration/Continuous Deployment (CI/CD) pipeline for deploying applications to Amazon Elastic Kubernetes Service (EKS). The pipeline includes the following steps:
 
 ### Step 1A: Launch an EC2 Instance
