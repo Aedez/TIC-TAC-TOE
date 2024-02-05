@@ -51,4 +51,4 @@ jobs:
         run: trivy image aedez1/tic-tac-toe:latest # Add Trivy scan command here
 
       - name: Run the container
-        run: docker run -d --name ticgame -p 3000:3000 aedez/tic-tac-toe:latest
+        run: docker run -d --name ticgame -p 3000:3000 aedez1/tic-tac-toe:latest
